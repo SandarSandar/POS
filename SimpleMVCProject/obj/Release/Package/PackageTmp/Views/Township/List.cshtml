@@ -1,0 +1,28 @@
+﻿@model List<TownshipViewModel>
+@{
+    ViewBag.Title = "List";
+    Layout = "~/Views/Shared/MasterLayout.cshtml";
+}
+<h2>List</h2>
+<table border="1">
+    <thead>
+        <tr>
+            <td hidden></td>
+            <td>Township Name</td>
+            <td>Zip Code</td>
+            <td>City</td>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(TownshipViewModel item in Model)
+        {
+            <tr>
+                <td hidden>@item.Id</td>
+                <td>@item.Name</td>
+                <td>@item.ZipCode</td>
+                <td>@item.CityName</td>
+            </tr>
+        }
+    </tbody>
+</table>
+

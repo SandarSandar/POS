@@ -1,0 +1,212 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FFE25532-3F7A-4D80-88DF-8CAB29796DC1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>POS.UI</RootNamespace>
+    <AssemblyName>POS.UI</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ClosedXML, Version=0.95.4.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ClosedXML.0.95.4\lib\net40\ClosedXML.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DocumentFormat.OpenXml, Version=2.7.2.0, Culture=neutral, PublicKeyToken=8fb06cb64d019a17, processorArchitecture=MSIL">
+      <HintPath>..\packages\DocumentFormat.OpenXml.2.7.2\lib\net40\DocumentFormat.OpenXml.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ExcelNumberFormat, Version=1.0.10.0, Culture=neutral, PublicKeyToken=23c6f5d73be07eca, processorArchitecture=MSIL">
+      <HintPath>..\packages\ExcelNumberFormat.1.0.10\lib\net20\ExcelNumberFormat.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DashboardUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DashboardUI.Designer.cs">
+      <DependentUpon>DashboardUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExcelUploadUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExcelUploadUI.Designer.cs">
+      <DependentUpon>ExcelUploadUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginUI.Designer.cs">
+      <DependentUpon>LoginUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Product2ListUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Product2ListUI.Designer.cs">
+      <DependentUpon>Product2ListUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Product2UI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Product2UI.Designer.cs">
+      <DependentUpon>Product2UI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProductListUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProductListUI.Designer.cs">
+      <DependentUpon>ProductListUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProductUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProductUI.Designer.cs">
+      <DependentUpon>ProductUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UOMListUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UOMListUI.Designer.cs">
+      <DependentUpon>UOMListUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UOMUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UOMUI.Designer.cs">
+      <DependentUpon>UOMUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserListUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserListUI.Designer.cs">
+      <DependentUpon>UserListUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserUI.Designer.cs">
+      <DependentUpon>UserUI.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="DashboardUI.resx">
+      <DependentUpon>DashboardUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExcelUploadUI.resx">
+      <DependentUpon>ExcelUploadUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginUI.resx">
+      <DependentUpon>LoginUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Product2ListUI.resx">
+      <DependentUpon>Product2ListUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Product2UI.resx">
+      <DependentUpon>Product2UI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductListUI.resx">
+      <DependentUpon>ProductListUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductUI.resx">
+      <DependentUpon>ProductUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="UOMListUI.resx">
+      <DependentUpon>UOMListUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UOMUI.resx">
+      <DependentUpon>UOMUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserListUI.resx">
+      <DependentUpon>UserListUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserUI.resx">
+      <DependentUpon>UserUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\POS.BusinessLogic\POS.BusinessLogic.csproj">
+      <Project>{21b7ebc0-ebd5-46b1-82bb-747761ae17b7}</Project>
+      <Name>POS.BusinessLogic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POS.Models\POS.Models.csproj">
+      <Project>{c3d5a28e-a83e-4b45-becd-df87a126a94c}</Project>
+      <Name>POS.Models</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\POS.Utilities\POS.Utilities.csproj">
+      <Project>{81f5763a-1c09-4dc6-bec5-92500f17efbd}</Project>
+      <Name>POS.Utilities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Resources\lock.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

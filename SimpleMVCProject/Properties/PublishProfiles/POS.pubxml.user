@@ -1,0 +1,238 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>D:\SDA\OnlineClasses\.Net\Publish Project</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/de/Microsoft.SqlServer.Types.resources.dll">
+      <publishTime>02/21/2014 05:26:06</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.dll">
+      <publishTime>02/27/2022 16:16:52</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.SqlServer.dll">
+      <publishTime>02/27/2022 16:16:52</publishTime>
+    </File>
+    <File Include="bin/es/Microsoft.SqlServer.Types.resources.dll">
+      <publishTime>02/21/2014 05:25:54</publishTime>
+    </File>
+    <File Include="bin/fr/Microsoft.SqlServer.Types.resources.dll">
+      <publishTime>02/21/2014 05:27:18</publishTime>
+    </File>
+    <File Include="bin/it/Microsoft.SqlServer.Types.resources.dll">
+      <publishTime>02/21/2014 05:26:02</publishTime>
+    </File>
+    <File Include="bin/ja/Microsoft.SqlServer.Types.resources.dll">
+      <publishTime>02/21/2014 05:25:22</publishTime>
+    </File>
+    <File Include="bin/ko/Microsoft.SqlServer.Types.resources.dll">
+      <publishTime>02/21/2014 05:27:16</publishTime>
+    </File>
+    <File Include="bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
+      <publishTime>01/09/2022 17:26:47</publishTime>
+    </File>
+    <File Include="bin/Microsoft.ReportViewer.WebForms.dll">
+      <publishTime>05/29/2015 21:27:38</publishTime>
+    </File>
+    <File Include="bin/Microsoft.SqlServer.Types.dll">
+      <publishTime>02/21/2014 05:28:46</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Web.Infrastructure.dll">
+      <publishTime>01/09/2022 17:26:41</publishTime>
+    </File>
+    <File Include="bin/pt/Microsoft.SqlServer.Types.resources.dll">
+      <publishTime>02/21/2014 05:25:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe">
+      <publishTime>01/09/2022 17:26:42</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Build.Tasks.CodeAnalysis.dll">
+      <publishTime>01/09/2022 17:26:42</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.dll">
+      <publishTime>01/09/2022 17:26:43</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.dll">
+      <publishTime>01/09/2022 17:26:44</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.VisualBasic.dll">
+      <publishTime>01/09/2022 17:26:44</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CSharp.Core.targets">
+      <publishTime>01/09/2022 17:26:44</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.VisualBasic.Core.targets">
+      <publishTime>01/09/2022 17:26:45</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Collections.Immutable.dll">
+      <publishTime>01/09/2022 17:26:45</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Reflection.Metadata.dll">
+      <publishTime>01/09/2022 17:26:45</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe">
+      <publishTime>01/09/2022 17:26:45</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe">
+      <publishTime>01/09/2022 17:26:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe.config">
+      <publishTime>01/09/2022 17:26:46</publishTime>
+    </File>
+    <File Include="bin/ru/Microsoft.SqlServer.Types.resources.dll">
+      <publishTime>02/21/2014 05:25:46</publishTime>
+    </File>
+    <File Include="bin/SimpleMVCProject.dll">
+      <publishTime>04/02/2022 12:53:34</publishTime>
+    </File>
+    <File Include="bin/System.Web.Helpers.dll">
+      <publishTime>01/09/2022 17:26:39</publishTime>
+    </File>
+    <File Include="bin/System.Web.Mvc.dll">
+      <publishTime>01/09/2022 17:26:41</publishTime>
+    </File>
+    <File Include="bin/System.Web.Razor.dll">
+      <publishTime>01/09/2022 17:26:38</publishTime>
+    </File>
+    <File Include="bin/System.Web.Webpages.Deployment.dll">
+      <publishTime>01/09/2022 17:26:39</publishTime>
+    </File>
+    <File Include="bin/System.Web.Webpages.dll">
+      <publishTime>01/09/2022 17:26:40</publishTime>
+    </File>
+    <File Include="bin/System.Web.Webpages.Razor.dll">
+      <publishTime>01/09/2022 17:26:40</publishTime>
+    </File>
+    <File Include="bin/zh-Hans/Microsoft.SqlServer.Types.resources.dll">
+      <publishTime>02/21/2014 05:27:58</publishTime>
+    </File>
+    <File Include="bin/zh-Hant/Microsoft.SqlServer.Types.resources.dll">
+      <publishTime>02/21/2014 05:28:10</publishTime>
+    </File>
+    <File Include="Content/bootstrap.css">
+      <publishTime>01/09/2022 17:53:03</publishTime>
+    </File>
+    <File Include="Content/bootstrap.min.css">
+      <publishTime>01/09/2022 17:53:03</publishTime>
+    </File>
+    <File Include="Content/Site.css">
+      <publishTime>01/09/2022 17:52:54</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.eot">
+      <publishTime>01/09/2022 17:53:03</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.svg">
+      <publishTime>01/09/2022 17:53:03</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.ttf">
+      <publishTime>01/09/2022 17:53:03</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.woff">
+      <publishTime>01/09/2022 17:53:03</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>01/09/2022 17:26:36</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>02/27/2022 16:16:54</publishTime>
+    </File>
+    <File Include="POSDataSet.xsc">
+      <publishTime>03/27/2022 09:24:26</publishTime>
+    </File>
+    <File Include="POSDataSet.xss">
+      <publishTime>03/27/2022 09:24:26</publishTime>
+    </File>
+    <File Include="Reports/Viewer/StudentDetailsReportViewer.aspx">
+      <publishTime>03/27/2022 09:52:53</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.js">
+      <publishTime>01/09/2022 17:53:03</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.min.js">
+      <publishTime>01/09/2022 17:53:02</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.10.2.js">
+      <publishTime>01/09/2022 17:53:06</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.10.2.min.js">
+      <publishTime>01/09/2022 17:53:06</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.10.2.min.map">
+      <publishTime>01/09/2022 17:53:06</publishTime>
+    </File>
+    <File Include="Scripts/modernizr-2.6.2.js">
+      <publishTime>01/09/2022 17:53:07</publishTime>
+    </File>
+    <File Include="Views/AboutUs/Index.cshtml">
+      <publishTime>01/22/2022 16:29:10</publishTime>
+    </File>
+    <File Include="Views/City/Create.cshtml">
+      <publishTime>03/06/2022 16:56:26</publishTime>
+    </File>
+    <File Include="Views/ContactUs/Index.cshtml">
+      <publishTime>02/26/2022 15:37:56</publishTime>
+    </File>
+    <File Include="Views/Converter/Index.cshtml">
+      <publishTime>02/05/2022 23:37:05</publishTime>
+    </File>
+    <File Include="Views/Dashboard/Index.cshtml">
+      <publishTime>01/23/2022 17:08:55</publishTime>
+    </File>
+    <File Include="Views/Dashboard/Simple.cshtml">
+      <publishTime>01/23/2022 15:56:03</publishTime>
+    </File>
+    <File Include="Views/Employee/Create.cshtml">
+      <publishTime>02/06/2022 16:38:48</publishTime>
+    </File>
+    <File Include="Views/Employee/CreateMultiEmployee.cshtml">
+      <publishTime>02/06/2022 16:50:53</publishTime>
+    </File>
+    <File Include="Views/Employee/GetAll.cshtml">
+      <publishTime>01/30/2022 17:05:02</publishTime>
+    </File>
+    <File Include="Views/Home/Index.cshtml">
+      <publishTime>02/19/2022 21:17:35</publishTime>
+    </File>
+    <File Include="Views/Product/Create.cshtml">
+      <publishTime>01/23/2022 16:58:08</publishTime>
+    </File>
+    <File Include="Views/Product/List.cshtml">
+      <publishTime>01/23/2022 16:54:20</publishTime>
+    </File>
+    <File Include="Views/Shared/MasterLayout.cshtml">
+      <publishTime>03/06/2022 17:26:55</publishTime>
+    </File>
+    <File Include="Views/Shared/_Layout.cshtml">
+      <publishTime>01/09/2022 17:52:53</publishTime>
+    </File>
+    <File Include="Views/Student/Edit.cshtml">
+      <publishTime>02/27/2022 17:24:26</publishTime>
+    </File>
+    <File Include="Views/Student/Entry.cshtml">
+      <publishTime>02/27/2022 17:27:34</publishTime>
+    </File>
+    <File Include="Views/Student/List.cshtml">
+      <publishTime>02/27/2022 17:42:48</publishTime>
+    </File>
+    <File Include="Views/Township/Entry.cshtml">
+      <publishTime>03/06/2022 17:39:02</publishTime>
+    </File>
+    <File Include="Views/Township/List.cshtml">
+      <publishTime>03/20/2022 16:55:35</publishTime>
+    </File>
+    <File Include="Views/web.config">
+      <publishTime>02/26/2022 16:14:13</publishTime>
+    </File>
+    <File Include="Views/_ViewStart.cshtml">
+      <publishTime>01/09/2022 17:52:52</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>04/02/2022 12:53:40</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

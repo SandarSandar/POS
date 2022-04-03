@@ -1,0 +1,42 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Create</title>
+</head>
+<body>
+    <div>
+        <form action="/Product/Create" , method="post">
+            <table>
+                <tr>
+                    <td>Product Id</td>
+                    <td><input type="number" , name="ProductId" required></td>
+                </tr>
+                <tr>
+                    <td>Product Name</td>
+                    <td><input type="text" , name="ProductName" required></td>
+                </tr>
+                <tr>
+                    <td>Unit Price</td>
+                    <td><input type="number" , name="UnitPrice" required></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="submit" , value="Add"></td>
+                    <td><a href="/Product/GetAll">List</a></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>@ViewBag.Message</td>
+                </tr>
+            </table>
+        </form>   
+    </div>
+</body>
+</html>

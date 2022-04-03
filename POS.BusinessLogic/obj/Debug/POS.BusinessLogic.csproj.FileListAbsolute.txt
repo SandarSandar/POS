@@ -1,0 +1,11 @@
+D:\My Training\POS\POS.BusinessLogic\bin\Debug\POS.BusinessLogic.dll
+D:\My Training\POS\POS.BusinessLogic\bin\Debug\POS.BusinessLogic.pdb
+D:\My Training\POS\POS.BusinessLogic\bin\Debug\POS.DAL.dll
+D:\My Training\POS\POS.BusinessLogic\bin\Debug\POS.Models.dll
+D:\My Training\POS\POS.BusinessLogic\bin\Debug\POS.Utilities.dll
+D:\My Training\POS\POS.BusinessLogic\bin\Debug\POS.DAL.pdb
+D:\My Training\POS\POS.BusinessLogic\bin\Debug\POS.Models.pdb
+D:\My Training\POS\POS.BusinessLogic\bin\Debug\POS.Utilities.pdb
+D:\My Training\POS\POS.BusinessLogic\obj\Debug\POS.BusinessLogic.csprojResolveAssemblyReference.cache
+D:\My Training\POS\POS.BusinessLogic\obj\Debug\POS.BusinessLogic.dll
+D:\My Training\POS\POS.BusinessLogic\obj\Debug\POS.BusinessLogic.pdb

@@ -1,0 +1,40 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>CreateMultiEmployee</title>
+</head>
+<body>
+    <div>
+        <form action="/Employee/CreateMultiEmployee" method="post">
+            <table>
+                <tr>
+                    <td>Id</td>
+                    <td><input type="text" name="[0].EmployeeId" /></td>
+                    <td>FristName</td>
+                    <td><input type="text" name="[0].FristName" /></td>
+                    <td>LastName</td>
+                    <td><input type="text" name="[0].LastName" /></td>
+                </tr>
+                <tr>
+                    <td>Id</td>
+                    <td><input type="text" name="[1].EmployeeId" /></td>
+                    <td>FristName</td>
+                    <td><input type="text" name="[1].FristName" /></td>
+                    <td>LastName</td>
+                    <td><input type="text" name="[1].LastName" /></td>
+                </tr>
+                <tr>
+                    <td><input type="submit" value="Save" /></td>
+                </tr>
+            </table>
+        </form> 
+    </div>
+</body>
+</html>

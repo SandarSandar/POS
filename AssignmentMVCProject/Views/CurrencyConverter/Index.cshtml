@@ -1,0 +1,70 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <script>
+        function LoadSelectedCurrency() {
+            if (@ViewBag.CurrencyResult != ""){
+                document.getElementById("selectFromCurrency").value = "@ViewBag.SelectedFromCurrency";
+                document.getElementById("selectToCurrency").value = "@ViewBag.SelectedToCurrency";
+            }
+        }
+    </script>
+</head>
+<body onload="LoadSelectedCurrency();">
+    <div> 
+        <h1>@ViewBag.GreetingMessage</h1>
+        <h1>Currency Converter</h1>
+        <form action="/CurrencyConverter/Converter" method="post">
+            <table>
+                <tr>
+                    <td>Source Currency:</td>
+                    <td><select id="selectFromCurrency" name="selectFromCurrency">
+                            <option value="">Select Currency</option>
+                            <option value="USD">USD Dollar</option>
+                            <option value="SGD">Singapore Dollar</option>                          
+                            <option value="MMK">Myanmar Kyat</option>
+                            <option value="BAHT">Thai Baht</option>                       
+                        </select>
+                    </td>                   
+                </tr>
+                <tr>
+                    <td>Destination Currency:</td>
+                    <td>
+                        <select id="selectToCurrency" name="selectToCurrency">
+                            <option value="">Select Currency</option>
+                            <option value="BAHT">Thai Baht</option>
+                            <option value="MMK">Myanmar Kyat</option>
+                            <option value="SGD">Singapore Dollar</option>
+                            <option value="USD">USD Dollar</option>                                                  
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Amount:</td>
+                    <td><input type="number" value="@ViewBag.Amount" name="txtAmount" required/></td>
+                </tr>
+                <tr>
+                    <td>Result:</td>
+                    <td><input type="number" value="@ViewBag.CurrencyResult" name="txtResult"/></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="submit" value="Convert" /></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>@ViewBag.ReturnMessage</td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>

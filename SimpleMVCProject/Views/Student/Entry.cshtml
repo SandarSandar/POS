@@ -1,0 +1,60 @@
+﻿
+@{
+    ViewBag.Title = "Entry";
+    Layout = "~/Views/Shared/MasterLayout.cshtml";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Entry</title>
+</head>
+<body>
+    <div>
+        <h4>Student Entry</h4>
+        <form action="/Student/Entry" method="post">
+            <table>
+                <tr>
+                    <td>Student No</td>
+                    <td><input type="text" name="No" required class = "form-control"/></td>
+                </tr>
+                <tr>
+                    <td>Student Name</td>
+                    <td><input type="text" name="Name" required class = "form-control"/></td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td><input type="text" name="Email" class = "form-control"/></td>
+                </tr>
+                <tr>
+                    <td>Date of Birth</td>
+                    <td><input type="date" name="DOB" class = "form-control"/></td>
+                </tr>
+                <tr>
+                    <td>Address</td>
+                    <td><input type="text" name="Address" class = "form-control"/></td>
+                </tr>
+                <tr>
+                    <td>Father Name</td>
+                    <td><input type="text" name="FatherName" class = "form-control"/></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="submit" value="Add" class="btn btn-default"/></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>@ViewBag.result</td>
+                </tr>
+                @if (ViewBag.result != "")
+                {
+                    @ViewBag.result;
+                }
+            </table>
+        </form>
+        
+    </div>
+</body>
+</html>

@@ -1,0 +1,46 @@
+﻿
+@{
+    ViewBag.Title = "ContactUs";
+    Layout = "~/Views/Shared/MasterLayout.cshtml";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div>
+        <form action="/ContactUs/Index" , method="post">
+            <table>
+                <tr>
+                    <td>Id</td>
+                    <td><input type="text" , name="Id" hidden></td>
+                </tr>
+                <tr>
+                    <td>Name</td>
+                    <td><input type="text" , name="Name" required></td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td><input type="email" , name="Email" required></td>
+                </tr>
+                <tr>
+                    <td>Message</td>
+                    <td><textarea cols="20" name="Message" rows="5" required></textarea></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="submit" , value="Send"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>@ViewBag.result</td>
+                </tr>
+            </table>
+        </form>   
+    </div>
+</body>
+</html>

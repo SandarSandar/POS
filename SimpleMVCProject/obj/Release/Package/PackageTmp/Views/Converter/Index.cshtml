@@ -1,0 +1,60 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <script> 
+        function fillOnLoadControl() {
+                if (@ViewBag.CurrencyResult != "")
+                {
+                    document.getElementById("chooseCurrency").value = "@ViewBag.SelectedCurrency";
+                }
+                if (@ViewBag.Amount != "0")
+                {
+                    document.getElementById("txtAmount").value = "@ViewBag.Amount";
+                }
+            }
+    </script>
+</head>
+<body onload="fillOnLoadControl();">
+    <div> 
+        <h1>Currency Converter</h1>
+        <form action="/Converter/Index" method="post">
+            <fieldset style="width:fit-content">
+                <legend>Currency Converter</legend>
+                <table>
+                    <tr>
+                        <td>Choose Currency</td>
+                        <td>
+                            <select id="chooseCurrency" onchange="ChangeCurrency()" name="SelectOneCurrency">
+                                <option value="">Select Currency</option>
+                                <option value="USD">USD Dollar</option>
+                                <option value="SGD">Singapore Dollar</option>
+                                <option value="BAHT">Thai Baht</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Amount:</td>
+                        <td><input type="number" name="txtAmount" id="txtAmount" /></td>
+                    </tr>
+                    <tr>
+                        <td>Result in MMK</td>
+                        <td><input type="text" value="@ViewBag.CurrencyResult" /></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input type="submit" value="Convert" /></td>
+                    </tr>
+                </table>
+            </fieldset>          
+        </form>
+    </div>
+</body>
+</html>

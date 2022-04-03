@@ -1,0 +1,49 @@
+﻿@model List<StudentViewModel>
+
+@{
+    ViewBag.Title = "Entry";
+    Layout = "~/Views/Shared/MasterLayout.cshtml";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>List</title>
+</head>
+<body>
+    <div>
+        <h4>Student List</h4>
+        <table border="1">
+            <thead>
+                <tr>
+                    <td>No</td>
+                    <td>Name</td>
+                    <td>Email</td>
+                    <td>DOB</td>
+                    <td>Address</td>
+                    <td>Father Name</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@item.No</td>
+                        <td>@item.Name</td>
+                        <td>@item.Email</td>
+                        <td>@item.DOB</td>
+                        <td>@item.Address</td>
+                        <td>@item.FatherName</td>
+                        <td><a href="/Student/Edit?studentId=@item.Id">Edit</a></td>
+                        <td><a href="/Student/Delete?studentId=@item.Id" onclick="return confirm('Are you sure you want to delete')";>Delete</a></td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

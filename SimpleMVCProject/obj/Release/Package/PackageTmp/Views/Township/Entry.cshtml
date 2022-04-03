@@ -1,0 +1,36 @@
+﻿@model List<CityViewModel>
+@{
+    ViewBag.Title = "Entry";
+    Layout = "~/Views/Shared/MasterLayout.cshtml";
+}
+
+<h2>Entry</h2>
+<form action="/Township/Entry" method="post">
+    <table>
+        <tr>
+            <td>Name</td>
+            <td><input type="text" name="Name" /></td>
+        </tr>
+        <tr>
+            <td>Zip Code</td>
+            <td><input type="text" name="ZipCode" /></td>
+        </tr>
+        <tr>
+            <td>City</td>
+            <td>
+                <select name="CityId">
+                    @foreach (var item in Model)
+                    {
+                        <option value="@item.Id">@item.Name</option>
+                    }                                       
+                </select>
+                            
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="submit" value="Save" /></td>
+        </tr>
+    </table>
+</form>
+

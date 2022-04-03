@@ -1,0 +1,39 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div>
+        <h1>This is Dashboard Page.</h1>   
+        <h1>@TempData["ProductIdForDashboard"].ToString()</h1>        
+    </div>
+        <form action="/Dashboard/Index" , method="post">
+            <table>
+                <tr>
+                    <td>Number 1:</td>
+                    <td><input type="number" , name="firstNum"></td>
+                </tr>
+                <tr>
+                    <td>Number 2:</td>
+                    <td><input type="number" , name="secondNum"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="submit" , value="Add"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Result is : @ViewBag.AddResult</td>
+                </tr>
+            </table>
+        </form>   
+</body>
+</html>

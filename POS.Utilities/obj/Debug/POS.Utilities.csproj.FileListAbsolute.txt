@@ -1,0 +1,5 @@
+D:\My Training\POS\POS.Utilities\bin\Debug\POS.Utilities.dll
+D:\My Training\POS\POS.Utilities\bin\Debug\POS.Utilities.pdb
+D:\My Training\POS\POS.Utilities\obj\Debug\POS.Utilities.csprojResolveAssemblyReference.cache
+D:\My Training\POS\POS.Utilities\obj\Debug\POS.Utilities.dll
+D:\My Training\POS\POS.Utilities\obj\Debug\POS.Utilities.pdb
